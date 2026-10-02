@@ -265,9 +265,11 @@ st.markdown("""
     margin-right:auto;
 ">
 <p style="color:white; font-size:20px; line-height:1.6;">
-I am interested in how technology can guide people through complex decisions.
-I spend my time learning, building, and documenting systems around learning, careers, and execution.
-This site is a living record of what I build, what fails, and what I learn over time.
+I’m interested in how businesses can make better decisions before committing significant time, money, and resources.
+
+I spend my time learning, testing, and building systems around business validation, customer research, experimentation, sales, and technology.
+
+This site is a living record of what I test, what fails, what works, and what I learn along the way.
 </p>
 </div>
 """, unsafe_allow_html=True)

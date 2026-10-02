@@ -77,8 +77,6 @@ with col1:
         """,
         unsafe_allow_html=True
     )
-
-
 # ---- About text ----
 with col2:
     st.markdown("""
@@ -91,25 +89,61 @@ with col2:
         font-size:18px;
         line-height:1.6;
     ">
+    
     <h2 style="font-weight:800;">About Me</h2>
 
-    <p>Hello, I’m <b>Yuvraj Rana</b>. I come from a small town near Ambala, Haryana, and I love exploring how technology can solve real problems. I’m a self-taught Python and Machine Learning developer who learns by building, documenting, and iterating.</p>
+    <p>
+        Hello, I’m <b>Yuvraj Rana</b>.
+        I help businesses and new founders figure out 
+        <b>what to build, who to build it for, and how to validate the idea</b>
+        before investing too much time and money.
+    </p>
 
-    <p>Right now, my focus is on creating systems that guide learning, career decisions, and practical problem-solving. Every project I do is an experiment in thinking, coding, and understanding the real world.</p>
+    <p>
+        My work sits at the intersection of 
+        <b>business thinking, customer research, experimentation, sales, and technology</b>.
+        I focus on reducing assumptions and replacing them with evidence from
+        real customers and real-world tests.
+    </p>
 
-    <p>My approach is simple: I take ideas, test them through code and data, learn from mistakes, and document what works. I often use AI tools like ChatGPT to accelerate my learning, get inspiration, and refine my solutions — always keeping the process my own.</p>
+    <p>
+        I use frameworks and principles such as 
+        <b>The Mom Test, Skin in the Game, Customer Interviews, Jobs to Be Done,
+        Pretotyping, the 6 Phases of Buying, buying emotions, and sales influence</b>
+        to understand customer problems, test demand, and improve business ideas.
+    </p>
 
-    <p><b>Current experiments:</b></p>
+    <p>
+        Technically, I am also a <b>self-taught Python and Machine Learning developer</b>.
+        I use technology and AI to build experiments, automate processes,
+        analyze information, and turn business problems into practical systems.
+    </p>
+
+    <p><b>My approach:</b></p>
+
     <ul>
-        <li>AI-driven career guidance systems</li>
-        <li>Stage-based decision support for applications</li>
-        <li>Long-term memory design for AI-driven projects</li>
-        <li>Data-driven automation tools for real-world problems</li>
+        <li>Understand the problem</li>
+        <li>Identify the riskiest assumptions</li>
+        <li>Talk to real customers</li>
+        <li>Test demand before building</li>
+        <li>Build only after learning</li>
+        <li>Measure, iterate, and improve</li>
     </ul>
 
-    <p>Every day, I build, test, document, and reflect — creating a growing body of work that will compound over time and open doors to new ideas and opportunities.</p>
+    <p>
+        I believe a good business idea is not something you simply feel confident about.
+        It is something you can <b>test, learn from, and improve through evidence</b>.
+    </p>
+
+    <p>
+        I’m constantly experimenting with <b>business validation, AI systems,
+        automation, customer research, and decision-making frameworks</b>
+        while documenting what I learn along the way.
+    </p>
+
     </div>
     """, unsafe_allow_html=True)
+
 
 
 st.markdown("<br>", unsafe_allow_html=True)
