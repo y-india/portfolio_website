@@ -97,7 +97,7 @@ st.markdown(
     """
     <style>
     [data-testid="stAppViewContainer"] {
-        background-image: url('https://github.com/y-india/images_hosting/blob/main/SELECTED_background_blur_for_portfolio.PNG?raw=true');
+        background-image: url('https://raw.githubusercontent.com/y-india/images_hosting/refs/heads/main/SELECTED_background_blur_for_portfolio.PNG');
         background-size: cover;          /* makes it full screen */
         background-position: center;     /* centers the image */
         background-repeat: no-repeat;    /* prevents tiling */
