@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     [data-testid="stAppViewContainer"] {
-        background-image: url('https://media.githubusercontent.com/media/y-india/portfolio_website_private/refs/heads/main/assets/SELECTED_background_for_portfolio.PNG');
+        background-image: url('https://raw.githubusercontent.com/y-india/images_hosting/refs/heads/main/SELECTED_background_for_portfolio.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
