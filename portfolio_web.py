@@ -11,16 +11,17 @@ st.set_page_config(
 # Page setup
 st.set_page_config(page_title="Yuvraj | Portfolio", layout="wide")
 apply_theme()
+
 # Custom top header bar
 st.markdown("""
 <style>
 .header-title {
-    font-size: 22px; /* decreased size */
+    font-size: 22px;
     font-weight: 700;
-    color: white; /* white text */
-    background: rgba(0, 0, 0, 0.55); /* black transparent background */
-    padding: 6px 12px; /* some spacing around text */
-    border-radius: 6px; /* smooth corners */
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 6px 12px;
+    border-radius: 6px;
     position: fixed;
     top: 10px;
     left: 20px;
@@ -32,26 +33,15 @@ st.markdown("""
     Yuvraj Rana <span style="font-weight:400;">Portfolio</span>
 </div>
 """, unsafe_allow_html=True)
+
 import os
-
-
-
-
-
-
-
-
-
-
-
 
 
 st.markdown("""
 <style>
-/* White button with soft white glow + black text */
 .glow-btn {
     background: rgba(255, 255, 255, 0.95) !important;
-    color: #000000 !important;               /* black text */
+    color: #000000 !important;
     border: 2px solid rgba(255,255,255,0.6) !important;
     border-radius: 16px !important;
     padding: 16px 20px !important;
@@ -67,7 +57,6 @@ st.markdown("""
     backdrop-filter: blur(10px);
 }
 
-/* Beautiful white glow + lift on hover */
 .glow-btn:hover {
     transform: translateY(-5px) !important;
     background: white !important;
@@ -80,38 +69,28 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-
-
-
-
-
-
-
-
-#check 
-
-
-
+# Background
 
 st.markdown(
     """
     <style>
     [data-testid="stAppViewContainer"] {
         background-image: url('https://raw.githubusercontent.com/y-india/images_hosting/refs/heads/main/SELECTED_background_blur_for_portfolio.PNG');
-        background-size: cover;          /* makes it full screen */
-        background-position: center;     /* centers the image */
-        background-repeat: no-repeat;    /* prevents tiling */
-        background-attachment: fixed;    /* stays in place while scrolling */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# ⬇️ tweak: adjust padding to center text more naturally on most screens
+
+# Hero section
+
 st.markdown("""
 <style>
-/* full-viewport wrapper that centers content exactly in middle */
 .hero-wrapper {
     position: fixed;
     inset: 0;
@@ -122,7 +101,6 @@ st.markdown("""
     pointer-events: none;
 }
 
-/* force viewport height for Streamlit container */
 body, [data-testid="stAppViewContainer"] {
     height: 100vh;
     overflow: hidden;
@@ -142,59 +120,7 @@ body, [data-testid="stAppViewContainer"] {
 """, unsafe_allow_html=True)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Headline text
-
-
-
-# st.markdown(
-#     """
-#     <div style="
-#         display:flex;
-#         flex-direction:column;
-#         align-items:center;
-#         justify-content:center;
-#         text-align:center;
-#         margin-bottom:25px;
-#     ">
-#         <h1 style='
-#             color:black;
-#             text-shadow: 2px 2px 8px rgba(255,255,255,0.3);
-#             font-size:56px;
-#             font-weight:800;
-#             margin:0;
-#         '>
-#             HI, I’M YUVRAJ
-#         </h1>
-
-#         <h2 style='
-#             color:black;
-#             font-size:38px;
-#             font-weight:640;
-#             margin-top:6px;
-#         '>
-#             I BUILD AND STUDY INTELLIGENT SYSTEMS
-#         </h2>
-#     </div>
-#     """,
-#     unsafe_allow_html=True,
-# )
-
-
-
-
+# Main heading
 
 st.markdown(
     """
@@ -214,8 +140,7 @@ st.markdown(
 )
 
 
-
-
+# Main positioning line
 
 st.markdown(
     """
@@ -226,7 +151,7 @@ st.markdown(
             font-weight:640;
             margin:0;
         '>
-            I BUILD AND STUDY INTELLIGENT SYSTEMS
+            I DISCOVER PROBLEMS, TEST IDEAS & BUILD SOLUTIONS
         </h2>
     </div>
     """,
@@ -234,25 +159,7 @@ st.markdown(
 )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Introduction
 
 st.markdown("""
 <div style="
@@ -265,25 +172,18 @@ st.markdown("""
     margin-right:auto;
 ">
 <p style="color:white; font-size:20px; line-height:1.6;">
-I’m interested in how businesses can make better decisions before committing significant time, money, and resources.
+I work at the intersection of customer discovery, business experimentation, and technology.
 
-I spend my time learning, testing, and building systems around business validation, customer research, experimentation, sales, and technology.
+I interview customers, investigate problems, and test business assumptions through real-world experiments before investing heavily in an idea.
 
-This site is a living record of what I test, what fails, what works, and what I learn along the way.
+So far, I have conducted 100+ customer interviews, reached out to 1,000+ people, and tested 7–9 business ideas using pretotyping techniques, including fake-door experiments.
+
+I also build with Python and Machine Learning, developing practical applications, APIs, computer vision systems, and live websites.
+
+This portfolio is a record of what I research, test, build, and learn along the way.
 </p>
 </div>
 """, unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
 
 
 slide = """
@@ -296,8 +196,9 @@ function slideOut(){
 """
 st.markdown(slide, unsafe_allow_html=True)
 
-# — BEAUTIFUL 4 buttons that look identical + Hire Me stands out just the right amount —
-# — 4 buttons with CSS glow magic —
+
+# Navigation buttons
+
 col1, col2, col3, col4, col5 = st.columns(5)
 
 
@@ -313,6 +214,8 @@ with col4:
     if st.button("✉️ Contact", use_container_width=True, key="contact_btn"):
         st.switch_page("pages/3_✉️_Contact_Me.py")
 
+
+# Currently exploring
 
 st.markdown("""
 <div style="
@@ -330,21 +233,9 @@ Currently exploring
 </h3>
 
 <ul style="color:white; font-size:18px; line-height:1.6; list-style-type:disc; padding-left:20px;">
-    <li>Validation techniques for product development .</li>
-    <li>Reading idea validation books and implementing them .</li>
-    <li>Changing Prompt Polish tool demo into project .</li>
+    <li>Customer discovery, Jobs to Be Done, and buying behaviour.</li>
+    <li>Pretotyping, fake-door experiments, and demand testing.</li>
+    <li>Turning the Prompt Polish demo into a working project.</li>
 </ul>
 </div>
 """, unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
-
