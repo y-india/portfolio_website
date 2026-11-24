@@ -1,7 +1,7 @@
 import streamlit as st
 import base64
 from utils.theme import apply_theme
-
+import os
 
 st.set_page_config(
     layout="wide",
@@ -34,9 +34,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-import os
-
-
 st.markdown("""
 <style>
 .glow-btn {
@@ -68,9 +65,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
 # Background
-
 st.markdown(
     """
     <style>
@@ -86,9 +81,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # Hero section
-
 st.markdown("""
 <style>
 .hero-wrapper {
@@ -158,9 +151,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
 # Introduction
-
 st.markdown("""
 <div style="
     margin-top:20px;
@@ -196,11 +187,8 @@ function slideOut(){
 """
 st.markdown(slide, unsafe_allow_html=True)
 
-
 # Navigation buttons
-
 col1, col2, col3, col4, col5 = st.columns(5)
-
 
 with col2:
     if st.button("👤 About", use_container_width=True, key="about_btn"):
@@ -214,9 +202,7 @@ with col4:
     if st.button("✉️ Contact", use_container_width=True, key="contact_btn"):
         st.switch_page("pages/3_✉️_Contact_Me.py")
 
-
 # Currently exploring
-
 st.markdown("""
 <div style="
     margin-top:30px;
