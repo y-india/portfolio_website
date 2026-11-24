@@ -2,6 +2,9 @@ import streamlit as st
 import base64
 from utils.theme import apply_theme
 
+
+
+# this is not inculded in main screen now #
 # ---------------------- PAGE CONFIG ----------------------
 st.set_page_config(layout="wide")
 apply_theme()
